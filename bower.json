@@ -1,0 +1,28 @@
+{
+  "name": "minimalistic angular",
+  "version": "0.0.1",
+  "homepage": "https://github.com/AlexanderKozhevin/minimalistic-angular-template",
+  "authors": [
+    "alexanderkozhevin <turboasm21@gmail.com>"
+  ],
+  "description": "a bloody simple template",
+  "keywords": [
+    "minimalistic",
+    "angular",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-loader": "~1.4.3",
+    "angular-sanitize": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "sass-flexbox": "*"
+  }
+}
