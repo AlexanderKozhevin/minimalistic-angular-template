@@ -15,13 +15,11 @@ var jslibs = [
   "bower_components/angular-route/angular-route.min.js",
   "bower_components/angular-sanitize/angular-sanitize.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+  "bower_components/angular-material/angular-material.min.js"
 ];
 
 var csslibs = [
-  "bower_components/angular-loading-bar/src/loading-bar.css",
-  "source/style/flags16.css",
-  "bower_components/angular-ui-tree/dist/angular-ui-tree.min.css",
-  "bower_components/ng-tags-input/ng-tags-input.min.css"
+  "bower_components/angular-material/angular-material.min.css"
 ];
 
 
