@@ -15,23 +15,16 @@ var jslibs = [
   "bower_components/angular-route/angular-route.min.js",
   "bower_components/angular-sanitize/angular-sanitize.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js",
-  "bower_components/angular-material/angular-material.min.js"
+  "bower_components/angular-material/angular-material.min.js",
+  "bower_components/angular-animate/angular-animate.min.js",
+  "bower_components/angular-aria/angular-aria.min.js",
+  "bower_components/angular-material-icons/angular-material-icons.min.js"
 ];
 
 var csslibs = [
-  "bower_components/angular-material/angular-material.min.css"
+  "bower_components/angular-material/angular-material.min.css",
+  "bower_components/angular-material-icons/angular-material-icons.css"
 ];
-
-
-
-
-//////////////////////////////////////////////////////
-// Locales
-
-
-//////////////////////////////////////////////////////
-// Connect
-
 
 
 gulp.task('connect', function() {
