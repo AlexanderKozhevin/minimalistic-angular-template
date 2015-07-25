@@ -23,6 +23,7 @@
     "angular-loader": "~1.4.3",
     "angular-sanitize": "~1.4.3",
     "angular-ui-router": "~0.2.15",
-    "sass-flexbox": "*"
+    "sass-flexbox": "*",
+    "lodash": "~3.10.0"
   }
 }
