@@ -102,7 +102,7 @@ gulp.task('gzip', function() {
 gulp.task('coffee', function() {
   gulp.src('source/app/**/*.coffee')
     .pipe($.coffee())
-    .pipe(concat('eagle.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest('production/assets/js'))
     .pipe(connect.reload());
 });

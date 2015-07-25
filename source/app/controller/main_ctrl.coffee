@@ -1,2 +1,2 @@
 angular.module("app").controller "mainCtrl",  ($scope) ->
-  console.log 'yyoyoyoyoo'
+  console.log 'main controller'
