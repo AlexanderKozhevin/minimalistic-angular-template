@@ -11,7 +11,7 @@ var templateCache = require('gulp-angular-templatecache');
 
 var jslibs = [
   "bower_components/lodash/lodash.min.js",
-  "bower_components/angular/angular.js",
+  "bower_components/angular/angular.min.js",
   "bower_components/angular-route/angular-route.min.js",
   "bower_components/angular-sanitize/angular-sanitize.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js",
@@ -30,11 +30,6 @@ var csslibs = [
 //////////////////////////////////////////////////////
 // Locales
 
-gulp.task('locales', function() {
-  return gulp.src(['source/locales/*.yml'])
-  .pipe($.yaml())
-  .pipe(gulp.dest('production/locales'))
-});
 
 //////////////////////////////////////////////////////
 // Connect
@@ -62,7 +57,6 @@ gulp.task('watch', function(){
   gulp.watch(['source/view/**/*.jade'], ['templates']);
   gulp.watch(['source/*.jade'], ['jade']);
   gulp.watch('source/app/**/*.coffee', ['coffee']);
-  gulp.watch('source/locales/*.yml', ['locales']);
 });
 
 //////////////////////////////////////////////////////
@@ -131,7 +125,7 @@ gulp.task('csslibs', function() {
 //////////////////////////////////////////////////////
 // All project compilation
 gulp.task('libs', ['jslibs', 'csslibs'])
-gulp.task('compile', ['libs', 'sass', 'jade', 'templates', 'coffee', 'locales'])
+gulp.task('compile', ['libs', 'sass', 'jade', 'templates', 'coffee'])
 gulp.task('production', ['compile', 'uglify', 'gzip'])
 
 //////////////////////////////////////////////////////
