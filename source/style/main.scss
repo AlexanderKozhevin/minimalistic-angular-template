@@ -2,7 +2,9 @@
 
 
 body{
-
+  section{
+    height: calc(100vh - 64px);
+  }
   .main_menu{
     margin-top: 20px;
     .item{
