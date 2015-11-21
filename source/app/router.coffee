@@ -11,4 +11,5 @@ angular.module('app').config ($stateProvider, $urlRouterProvider, $locationProvi
 
 
 
+
   console.log 'Routes initiated'

@@ -18,7 +18,9 @@ var jslibs = [
   "bower_components/angular-material/angular-material.min.js",
   "bower_components/angular-animate/angular-animate.min.js",
   "bower_components/angular-aria/angular-aria.min.js",
-  "bower_components/angular-material-icons/angular-material-icons.min.js"
+  "bower_components/angular-material-icons/angular-material-icons.min.js",
+  "bower_components/angular-simple-logger/dist/angular-simple-logger.min.js",
+  "bower_components/angular-google-maps/dist/angular-google-maps.min.js"
 ];
 
 var csslibs = [

@@ -1,3 +1,30 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+
 body{
-  background-color: rgba(250,250,250,1);
+
+  .main_menu{
+    margin-top: 20px;
+    .item{
+      height: 50px;
+      background-color: rgba(250,250,250,1);
+      margin-bottom: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(245,245,245,1);
+      }
+      &:hover .setting_button{
+        opacity: 1;
+      }
+      .title{
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 100;
+      }
+      .setting_button{
+        opacity: 0;
+      }
+    }
+  }
+
 }

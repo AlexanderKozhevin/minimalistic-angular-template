@@ -1,0 +1,21 @@
+md-toolbar
+  div.md-toolbar-tools
+    h2
+      span Tardis
+    span(flex='')
+    md-button.md-icon-button(aria-label='Favorite')
+      md-icon.material-icons() menu
+
+
+section(layout='row', flex='' id="popupContainer")
+  md-sidenav.md-sidenav-left.md-whiteframe-z2( md-is-locked-open="true")
+    md-content(layout-padding)
+      div.title(layout="column")
+        md-button.md-fab(aria-label='add')
+          md-icon(aria-label="Menu" class="material-icons") note_add
+        div.main_menu
+          div.item(layout="row" layout-align="start center" ng-repeat="item in main_menu")
+            div.title {{item.name}}
+            span(flex)
+            md-button.md-icon-button.setting_button(aria-label='Favorite' ng-click="showGreeting(item)")
+              md-icon.material-icons() settings
