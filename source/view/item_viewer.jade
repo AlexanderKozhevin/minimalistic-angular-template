@@ -1,0 +1,26 @@
+md-dialog.item_viewer()
+  form
+    md-toolbar
+      div.md-toolbar-tools
+        h2 Card Viewer
+        span(flex='')
+        md-button.md-icon-button(ng-click='actions.hide()')
+          md-icon.material-icons(aria-label='Close dialog') clear
+    md-dialog-content(style='max-width:800px;max-height:810px; ')
+      div.md-dialog-content
+        md-input-container()
+          label Title
+          input(ng-model="current_item.name")
+        md-input-container.md-block()
+          label What about
+          textarea(ng-model="current_item.content" columns="1" rows="5")
+          
+      div.actions(layout='row')
+        span(flex)
+        md-button.md-fab.md-primary(aria-label='add' ng-click="actions.save()")
+          md-icon(aria-label="Menu" class="material-icons") done
+        md-button.md-fab.md-warn(aria-label='add' ng-click="actions.remove()")
+          md-icon(aria-label="Menu" class="material-icons") delete
+          
+      
+  

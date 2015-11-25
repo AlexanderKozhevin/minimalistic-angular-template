@@ -30,6 +30,7 @@
     "angular-material": "~0.10.1",
     "material-design-icons": "~2.0.0",
     "angular-google-maps": "~2.2.1",
-    "angular-simple-logger": "~0.1.5"
+    "angular-simple-logger": "~0.1.5",
+    "restangular": "~1.5.1"
   }
 }

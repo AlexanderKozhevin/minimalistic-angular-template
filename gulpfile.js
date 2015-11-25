@@ -20,7 +20,7 @@ var jslibs = [
   "bower_components/angular-aria/angular-aria.min.js",
   "bower_components/angular-material-icons/angular-material-icons.min.js",
   "bower_components/angular-simple-logger/dist/angular-simple-logger.min.js",
-  "bower_components/angular-google-maps/dist/angular-google-maps.min.js"
+  "bower_components/restangular/dist/restangular.min.js"
 ];
 
 var csslibs = [
@@ -33,7 +33,8 @@ gulp.task('connect', function() {
   connect.server({
     root: 'production',
     livereload: true,
-    fallback: 'production/assets/index.html'
+    fallback: 'production/assets/index.html',
+    port: 8081
   });
 });
 
